@@ -81,6 +81,8 @@ class DocumentLibrariesController extends Controller
                 'tagView' => $tagView,
                 'tagID' => $tagID,
                 'role' => $role,
+                'roleID' => auth()->user()->role,
+                'userID' => auth()->user()->id,
             )
         );
         return $document_libraries;
